@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="../13-todolist/js/jquery.min.js"></script> -->
+</head>
+
+<body>
+    <script>
+        var todolist = [{
+            title: '我今天吃了八个馒头',
+            done: false
+        }, {
+            title: '我今天又要加班啊',
+            done: false
+        }, ];
+        localStorage.setItem('tode', JSON.stringify(todolist))
+        var data = localStorage.getItem('tode')
+            //字符串格式 
+        console.log(typeof data);
+        data = JSON.parse(data);
+        console.log(data);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承</title>
+</head>
+
+<body>
+    <script>
+        function fn(x, y) {
+            console.log('我想喝手磨咖啡');
+            console.log(this);
+            console.log(x + y);
+        }
+        var o = {
+                name: 'andy'
+            }
+            //call 呼叫的意思  1.可以调用函数  2.可以改变this指向
+        fn.call(o, 1, 2)
+    </script>
+</body>
+
+</html>
