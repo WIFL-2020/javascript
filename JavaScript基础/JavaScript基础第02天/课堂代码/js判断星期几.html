@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var week = parseInt(prompt('请输入几号'));
+        var myDate = new Date();
+        var week = myDate.getDate()
+
+        if (week === 1) {
+            alert(`${week}打羽毛球`)
+        } else if (week === 2) {
+            alert(`${week}打豆豆`)
+        } else if (week === 3) {
+            alert(`${week}打麻将`)
+        } else if (week === 4) {
+            alert(`${week}打台球`)
+        } else if (week === 5) {
+            alert(`${week}打游戏`)
+                // } else if (week === 6) {
+                //     alert(`${week}捉泥鳅`)
+                // } else if (week === 7) {
+                //     alert(`${week}睡觉`)
+                // }
+        } else {
+            alert('写代码')
+        }
+    </script>
+</body>
+
+</html>

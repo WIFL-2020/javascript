@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Hero(uname, type, blood, attack) {
+            this.name = uname;
+            this.type = type;
+            this.blood = blood;
+            this.attack = function(attack) {
+                console.log(`${this.name}英雄是血量为${this.blood}的${this.type}型英雄`);
+            }
+        }
+        var lb = new Hero('廉颇', '力量', '500');
+        console.log(lb);
+        console.log(lb.name);
+        console.log(lb.type);
+        console.log(lb.blood);
+        lb.attack();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算机小功能</title>
+</head>
+
+<body>
+    <script>
+        // do {
+        //     var computer = parseInt(prompt('请输入您需要的服务:' + '\n' + '1.加法' + '\n' + '2.减法' + '\n' + '3.乘法' + '\n' + '4.除法' + '\n' + '5.退出服务'));
+        //     switch (computer) {
+        //         case 1:
+        //             var sum1 = parseInt(prompt('请输入第一个数'))
+        //             var sum2 = parseInt(prompt('请输入第二个数'))
+        //             var sum3 = sum1 + sum2
+        //             alert('两个数的和为：' + sum3)
+        //             break;
+        //         case 2:
+        //             var sum4 = parseInt(prompt('请输入第一个数'))
+        //             var sum5 = parseInt(prompt('请输入第二个数'))
+        //             var sum6 = sum4 - sum5
+        //             alert('两个数的差为：' + sum6)
+        //             break;
+        //         case 3:
+        //             var sum7 = parseInt(prompt('请输入第一个数'))
+        //             var sum8 = parseInt(prompt('请输入第二个数'))
+        //             var sum9 = sum7 * sum8
+        //             alert('两个数相乘的和为：' + sum9)
+        //             break;
+        //         case 4:
+        //             var sum10 = parseInt(prompt('请输入第一个数'))
+        //             var sum11 = parseInt(prompt('请输入第二个数'))
+        //             var sum12 = sum10 / sum11
+        //             alert('两个数相除的结果为：' + sum12)
+        //             break;
+        //         case 5:
+        //             alert('您已退出服务')
+        //             break;
+        //         default:
+        //             alert('您输入的有误')
+        //     }
+
+        // } while (computer != 5)
+
+        function getComputer() {
+            do {
+                var computer = prompt('请输入您需要的服务:' + '\n' + '1.加法' + '\n' + '2.减法' + '\n' + '3.乘法' + '\n' + '4.除法' + '\n' + '5.退出服务');
+                switch (computer) {
+                    case '1':
+                        var sum1 = parseInt(prompt('请输入第一个数'))
+                        var sum2 = parseInt(prompt('请输入第二个数'))
+                        return (sum1 + sum2)
+                        break;
+                    case '2':
+                        var sum1 = parseInt(prompt('请输入第一个数'))
+                        var sum2 = parseInt(prompt('请输入第二个数'))
+                        return (sum1 - sum2)
+                        break;
+                    case '3':
+                        var sum1 = parseInt(prompt('请输入第一个数'))
+                        var sum2 = parseInt(prompt('请输入第二个数'))
+                        return (sum1 * sum2)
+                        break;
+                    case '4':
+                        var sum1 = parseInt(prompt('请输入第一个数'))
+                        var sum2 = parseInt(prompt('请输入第二个数'))
+                        return (sum1 / sum2)
+                        break;
+                    case '5':
+                        alert('您已退出服务')
+                        break;
+                }
+
+            } while (computer != 5)
+        }
+        // default:
+        alert(getComputer())
+
+        // getComputer(20, 50);
+
+
+
+        // function getjia(x, y) {
+        //     var x = parseInt(prompt('请输入第一个数字'))
+        //     var y = parseInt(prompt('请输入第二个数字'))
+        //     var z = x + y
+        //     alert('两个数的和是:' + z)
+        // }
+
+        // function getjian(x, y) {
+        //     var x = parseInt(prompt('请输入第一个数字'))
+        //     var y = parseInt(prompt('请输入第二个数字'))
+        //     var z = x - y
+        //     alert('两个数的差是:' + z)
+        // }
+
+        // function getchen(x, y) {
+        //     var x = parseInt(prompt('请输入第一个数字'))
+        //     var y = parseInt(prompt('请输入第二个数字'))
+        //     var z = x * y
+        //     alert('两个数的乘积是:' + z)
+        // }
+
+        // function getchu(x, y) {
+        //     do {
+        //         var x = parseInt(prompt('请输入第一个数字'))
+        //         var y = parseInt(prompt('请输入第二个数字'))
+        //         var z = x / y
+        //         alert('两个数相除的结果是:' + z)
+        //         break
+        //     } while (z == x / y)
+        // }
+        // getchu()
+    </script>
+</body>
+
+</html>

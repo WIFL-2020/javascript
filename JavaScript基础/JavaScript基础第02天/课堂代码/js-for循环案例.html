@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //求1到100之间奇数的和与偶数的和
+        // var sum = 0;
+        // var odd = 0;
+        // var even = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 2 == 0) {
+        //         even += i;
+        //     } else {
+        //         odd += i;
+        //     }
+        // }
+        // console.log(odd);
+        // console.log(even);
+
+        //求1到100之间能被3整除的数字的和
+        // sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 3 == 0) {
+        //         sum += i;
+        //     }
+        // }
+        // console.log(`能被3整除的数字的和为:${sum}`);
+
+        //求1到100之间的和的平均值
+        // var sum1 = 0;
+        // var average = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     sum1 += i;
+        //     average = sum1 / 100;
+        // }
+        // console.log(average);
+
+        var sum = 0; //班级总分
+        var average = 0; //班级平均分
+        var num = prompt('请输入班级的总人数:');
+        for (var i = 1; i <= num; i++) {
+            var score = prompt(`请输入第${i}个学生的成绩`);
+            sum = sum + parseFloat(score);
+        }
+        average = sum / num;
+        alert('班级总分为:' + sum);
+        alert('班级平均分为：' + average)
+    </script>
+</body>
+
+</html>

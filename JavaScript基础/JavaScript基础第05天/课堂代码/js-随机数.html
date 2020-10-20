@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getRandom(min, max) {
+            // min = Math.ceil(min);
+            // max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值 
+        }
+
+        var res = getRandom(1, 10);
+        var fale = true
+        while (fale) {
+            var shuzhi = prompt('请输入数子')
+            if (shuzhi > res) {
+                alert('你猜大了')
+            } else if (shuzhi < res) {
+                alert('你猜小了')
+            } else {
+                alert('你猜对了哦，兄跌')
+                fale = false
+            }
+        }
+    </script>
+</body>
+
+</html>

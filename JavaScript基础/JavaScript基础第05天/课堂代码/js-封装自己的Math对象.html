@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var myMath = {
+            PI: 3.1415926,
+            max: function() {
+                if (arguments.length === 0) {
+                    return -Infinity;
+                }
+                var max = arguments[0]
+                for (var i = 1; i < arguments.length; i++) {
+                    if (arguments[i] > max) {
+                        max = arguments[i]
+                    }
+                }
+                return max;
+            },
+            min: function() {
+                if (arguments.length === 0) {
+                    return -Infinity;
+                }
+                for (var i = 1; i < arguments.length; i++) {
+                    var min = arguments[0]
+                    if (arguments[i] < min) {
+                        min = arguments[i]
+                    }
+                }
+                return min;
+            }
+        }
+        console.log(myMath.PI);
+        var res = myMath.max(20, 10, 30, 2, 5, 50)
+        console.log(res);
+    </script>
+</body>
+
+</html>

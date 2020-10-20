@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getZhiShu(num1) {
+            for (var i = 2; i < num1; i++) {
+                if (num1 % i === 0) {
+                    return false; //不是质数
+                }
+            }
+            return true; //是质数
+        }
+        console.log(getZhiShu(11));
+
+        for (var j = 2; j <= 100; j++) {
+            var flag = getZhiShu(j) //接收
+            if (flag === true)
+                document.write(j + ':是质数<br>')
+        }
+    </script>
+</body>
+
+</html>

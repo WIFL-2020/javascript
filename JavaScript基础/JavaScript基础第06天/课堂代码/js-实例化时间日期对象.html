@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var myDate = new Date();
+        var y = myDate.getFullYear();
+        var m = (myDate.getMonth() + 1).toString().padStart(2, '0');
+        var d = myDate.getDate().toString().padStart(2, '0');
+        var h = myDate.getHours().toString().padStart(2, '0');
+        var f = myDate.getMinutes().toString().padStart(2, '0');
+        var s = myDate.getSeconds().toString().padStart(2, '0');
+        var z = myDate.getDay();
+        var str = `${y}-${m}-${d} ${h}-${f}-${s}`
+        console.log(str);
+        console.log(z);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = 'aalajajjomlknifaf'
+        var obj = {}
+        for (var i = 0; i < str.length; i++) {
+            var char = str[i]
+            if (obj[char]) {
+                obj[char]++
+            } else {
+                obj[char] = 1
+            }
+        }
+        console.log(obj);
+
+        var sum = 0;
+        var stn = '';
+        for (var key in obj) {
+            if (obj[key] > max) {
+                max = obj[key]
+                stn = key;
+            }
+        }
+        console.log(max);
+        console.log('最多的那个字符是:' + stn);
+    </script>
+</body>
+
+</html>

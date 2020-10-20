@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内部写法</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <script>
+        //获取元素
+        var box = document.querySelector('div')
+            //注册时间
+        flag = 0
+        box.onclick = function() {
+            if (flag == 0) {
+                this.style.backgroundColor = 'purple'
+                this.style.width = '300px'
+                flag = 1
+            } else {
+                this.style.backgroundColor = 'pink'
+                this.style.width = '200px'
+                flag = 0
+            }
+        }
+    </script>
+</body>
+
+</html>

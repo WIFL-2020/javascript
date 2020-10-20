@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function isZhiShi(num1) {
+        //     var fale = true;
+        //     for (var i = 2; i < num1; i++) {
+        //         if (num1 % i == 0) {
+        //             fale = false
+        //         }
+        //     }
+        //     return fale;
+        // }
+        // console.log(isZhiShi(50));
+
+
+        // for (var j = 2; j <= 100; j++) {
+        //     var re = isZhiShi(j)
+        //     if (re) {
+        //         document.write(j + '是质数<br>')
+        //     }
+        // }
+        // document.write()
+
+
+        // function isZs(num) {
+        //     var fale = true;
+        //     for (var i = 2; i < num; i++) {
+        //         if (num % i == 0) {
+        //             fale = false;
+        //         }
+        //     }
+        //     return fale;
+        // }
+        // // console.log(isZs(95));
+
+        // for (var j = 2; j <= 100; j++) {
+        //     var res = isZs(j)
+        //     if (res) {
+        //         document.write(j + ':是质数<br>')
+        //     }
+        // }
+
+        function isZhiShi(num) {
+            var fale = true;
+            for (var i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    return fale = false
+                }
+            }
+            return fale;
+        }
+        console.log(isZhiShi(55));
+
+        for (var j = 2; j <= 100; j++) {
+            var res = isZhiShi(j);
+            if (res) {
+                document.write(j + ':是质数<br>')
+            }
+        }
+    </script>
+</body>
+
+</html>

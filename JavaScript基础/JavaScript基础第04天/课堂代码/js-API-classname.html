@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            color: #fff;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>123</div>
+    <script>
+        var tes = document.querySelector('div')
+        tes.onclick = function() {
+            // this.style.backgroundColor = 'green'
+            // this.style.fontSize = '25px'
+            // this.style.marginTop = '100px'
+            // this.style.marginLeft = '100px'
+            this.className = 'first'
+        }
+    </script>
+</body>
+
+</html>

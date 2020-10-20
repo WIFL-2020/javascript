@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三个数的最大值</title>
+</head>
+
+<body>
+    <script>
+        function getMax() {
+            var x = prompt('请你输入第一个数字')
+            var y = prompt('请你输入第二个数字')
+            var z = prompt('请你输入第三个数字')
+            var relate = x > y ? (x > z ? x : z) : (y > z ? y : z)
+            return `${relate}最大`
+        }
+        alert(getMax())
+    </script>
+</body>
+
+</html>

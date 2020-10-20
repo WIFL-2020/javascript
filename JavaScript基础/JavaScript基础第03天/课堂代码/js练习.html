@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var str = 'zxcvbnmasdfghjklzswtv';
+        // var o = {};
+        // for (var i = 0; i < str.length; i++) {
+        //     var chars = str.charAt(i);
+        //     if (o[chars]) {
+        //         o[chars]++;
+        //     } else {
+        //         o[chars] = 1;
+        //     }
+        // }
+        // console.log(o);
+
+        var str = 'avfwswdsvas';
+        var m = {};
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);
+            if (m[chars]) {
+                m[chars]++;
+            } else {
+                m[chars] = 1;
+            }
+        }
+        console.log(m);
+        //遍历对象
+        var max = 0;
+        var ch = '';
+        for (var k in m) {
+            if (m[k] > max) {
+                max = m[k]
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log(ch);
+
+
+        //出现最多的
+        var str4 = 'adfaggagadnskaiudaidafka';
+        var a = {};
+        for (var i = 0; i < str4.length; i++) {
+            var charse = str4.charAt(i);
+            if (a[charse]) {
+                a[charse]++;
+            } else {
+                a[charse] = 1;
+            }
+        }
+        var max = 0;
+        var ch = '';
+        for (var k in a) {
+            if (a[k] > max) {
+                max = a[k]
+                ch = k;
+            }
+        }
+        console.log(a);
+        console.log(ch);
+        console.log(max);
+    </script>
+</body>
+
+</html>

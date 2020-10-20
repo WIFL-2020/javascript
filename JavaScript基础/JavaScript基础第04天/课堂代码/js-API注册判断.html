@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin: 100px auto;
+            height: 50px;
+            width: 500px;
+            border: 1px solid #ccc;
+        }
+        
+        .box p {
+            display: inline-block;
+        }
+        
+        .wrong {
+            color: red;
+        }
+        
+        .right {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input type="password" value="">
+        <p>请输入6~16位的数字</p>
+    </div>
+    <script>
+        //获取元素
+        var tes = document.querySelector('input')
+        var rs = document.querySelector('p')
+            //注册事件
+        tes.onblur = function() {
+            if (this.value.length < 6 || this.value.length > 16) {
+                rs.style.color = 'red'
+                rs.innerHTML = '您输入的数字不对要6到16位的'
+            } else {
+                rs.style.color = 'green'
+                rs.innerHTML = '您输入的正确'
+            }
+        }
+    </script>
+</body>
+
+</html>

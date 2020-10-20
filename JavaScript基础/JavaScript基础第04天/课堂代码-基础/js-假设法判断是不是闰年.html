@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //判断年份的2月份多少天
+        function backDay() {
+            var year = prompt('请输入年份')
+            if (isRunYear(year)) {
+                alert('这是闰年2月份有29天')
+            } else {
+                alert('这是平年2月份有28天')
+            }
+        }
+
+        backDay();
+
+
+        //判断是不是闰年
+        function isRunYear(year) {
+            var fale = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                return true;
+            }
+            return fale;
+        }
+        // console.log(isRunYear(2010));
+    </script>
+</body>
+
+</html>

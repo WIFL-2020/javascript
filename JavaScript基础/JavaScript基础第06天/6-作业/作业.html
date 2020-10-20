@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = 'abaasdffggghhjjkkgfddsssss3444343'
+            //字符串的长度
+        var length = str.length;
+        console.log('字符串的长度为:' + length);
+        //取出指定位置的字符0，3，5，9
+        var index = str.charAt(0)
+        var index1 = str.charAt(3)
+        var index2 = str.charAt(5)
+        var index3 = str.charAt(9)
+        console.log(index, index1, index2, index3);
+        //查找字符串中是否有 i,c,b存在
+        for (var i = 0; i < str.length; i++) {
+            if (str.indexOf('i') !== -1) {
+                console.log('有' + i);
+            } else if (str.indexOf('c') !== -1) {
+                console.log('有' + c);
+            } else if (str.indexOf('b') !== -1) {
+                console.log('有' + 'b');
+            } else {
+                console.log('里面没有');
+            }
+        }
+        //将g替换为22,ss替换为b
+        var g = 'g'
+        for (var i = 0; i < str.length; i++) {
+            //    str.charAt('i')
+
+        }
+        while (str.indexOf('g') !== -1) {
+            str = str.replace('g', '22');
+            // str = str.replace('ss', 'b');
+        }
+        // console.log(str);
+
+        while (str.indexOf('ss') !== -1) {
+            // str = str.replace('g', '22');
+            str = str.replace('ss', 'b');
+        }
+        console.log(str);
+
+        //截取 1-5位置的字符串
+        var stn = str.substr(1, 5)
+        console.log(stn);
+
+        //找出以上出现最多的字符和出现的次数
+        var str = 'abaasdffggghhjjkkgfddsssss3444343'
+        var o = {};
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);
+            if (o[chars]) {
+                o[chars]++;
+            } else {
+                o[chars] = 1;
+            }
+        }
+        console.log(o);
+        //  遍历对象
+        var max = 0;
+        var ch = '';
+        for (var k in o) {
+            // k 得到是 属性名
+            // o[k] 得到的是属性值
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log('最多的字符是' + ch);
+
+        //遍历字符串，并将遍历的两头添加符号@
+        var str = 'abaasdffggghhjjkkgfddsssss3444343'
+        var arr = str.split('');
+        var newArr = arr.join('@')
+        var sum = '@' + newArr + '@'
+        console.log(sum);
+    </script>
+</body>
+
+</html>

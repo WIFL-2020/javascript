@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var studen = new Object();
+        studen.uname = '小张';
+        studen.id = 10;
+        studen.sex = '女';
+        studen.grade = '六年级';
+        studen.sayHi = function() {
+                console.log('嗨喽,你好我是' + this.uname);
+            }
+            // sayHi()
+        for (var k in studen) {
+            console.log(studen[k]);
+        }
+
+        console.log(studen.uname);
+        studen.sayHi();
+    </script>
+</body>
+
+</html>

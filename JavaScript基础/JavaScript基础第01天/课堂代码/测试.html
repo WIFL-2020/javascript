@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+            <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+
+                <title>Document</title>
+    </head>
+
+
+    <body>
+
+        <script>
+            while  (true)  {            
+                var  i  =  prompt('请输入你的名字');            
+                var  str  =  /[\u4e00-\u9fa5]{2,5}/;            
+                if  (str.test(i))  {                
+                    break;            
+                }            
+                alert('请输入2-5位的中文');        
+            }        
+            document.body.style.color  =  "#f00";        
+            document.body.innerHTML  =  '你的名字是:'  +  i;
+        </script>
+    </body>
+
+    </html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+            <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+
+                <title>Document</title>
+    </head>
+    <style>
+        body {
+            font-size: 50px;
+            color: #f00;
+        }
+    </style>
+
+    <body>
+
+        <script>
+            var  i  =  confirm('你是男神吗?');        
+            while  (i  ==  false)  {            
+                alert('不,你是!')            ;
+                i  =  confirm('你是男神吗?');        
+            }        
+            document.body.innerHTML  =  "你承认了 你是了吧";
+        </script>
+    </body>
+
+    </html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+    <head>
+
+
+        <meta charset="UTF-8">
+
+
+            <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+
+
+                <title>Document</title>
+    </head>
+
+
+
+
+    <body>
+
+
+        <script>
+            while   (true)   {                            
+                var   i   =   prompt('请输入你的名字');                            
+                var   str   =   /^[\u4e00-\u9fa5]{2,5}$/;                          
+                if   (str.test(i))   {                                    
+                    break;                            
+                };                            
+                alert('请输入2-5位的中文');                    
+            }                    
+            while   (true)   {                            
+                var   sex   =   prompt('请输入你的性别');                            
+                if   (sex   ==   '男'   ||   sex   ==   '女')   {                                    
+                    break;                            
+                }                            
+                alert('你不是男也不是女,难道是人妖?');                    
+            }                    
+            while   (true)   {                            
+                var   age   =   prompt('请输入你的年龄');                            
+                var   j   =   /^[1][0-9]{1,2}$/ ;                           
+                if   (j.test(age))   {                                    
+                    break;                            
+                };                            
+                alert('请输入1到2位数字');                    
+            }                    
+            document.body.style.color   =   "#f00";                    
+            document.body.innerHTML   =   `你的名字是:${i}<br>你的性别:${sex}<br>你的年龄:${age}岁`;
+        </script>
+    </body>
+
+
+
+    </html>

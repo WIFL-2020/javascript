@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //先声明一个临时变量
+        var num0;
+        var num1 = '苹果';
+        var num2 = '香蕉';
+        //将某一个变量赋值给临时变量
+        num0 = num1;
+        //将另一个变量赋值给第一个赋值的变量
+        num1 = num2;
+        //将临时变量赋值给第二个赋值的变量
+        num2 = num0;
+        console.log(num1);
+        console.log(num2);
+
+
+        var str = 'andy';
+        console.log(str.length);
+        var temp = new String(str);
+        str = temp;
+        temp = 0;
+        console.log(str);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //冒泡排序
+        // var arr = [1, 5, 6, 87, 5, 4, 9, 55, 66, 3, 2, 4, 101, 7]
+        // for (var i = 0; i < arr.length-1; i++) {
+        //     for (var j = 0; j < arr.length - 1-i; j++) {
+        //         if (arr[j] > arr[j + 1]) {
+        //             var temp = arr[j]
+        //             arr[j] = arr[j + 1]
+        //             arr[j + 1] = temp;
+        //         }
+        //     }
+        // }
+        // console.log(arr);
+
+        // var arr = [10, 2, 5, 6, 98, 4]
+        //     //需要遍历数组 只有前一个比后一个要大 就交换它们两个的位置
+        // for (var j = 0; j < arr.length; j++) {
+        //     //如何判断数组的前一个元素比后一个元素要大、
+        //     if (arr[j] > arr[j + 1]) {
+        //         var temp = arr[j];
+        //         arr[j] = arr[j + 1];
+        //         arr[j + 1] = temp;
+        //     }
+        // }
+        // console.log(arr);
+
+
+        var arr = [20, 60, 50, 71, 58, 3, 55, 24, 2, 9, 7, 4]
+        for (var i = 0; i < arr.length - 1; i++) {
+            for (var j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    var temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+            }
+        }
+        console.log(arr);
+
+
+        var x = 45;
+        var y = 50;
+        var z = 40;
+        // var relate = x > y ? x : y(x > z ? x : z)(y > z ? y : z);
+        //求三个数的最大值
+        var max = x > y ? (x > z ? x : z) : (y > z ? y : z)
+        console.log(max);
+    </script>
+</body>
+
+</html>

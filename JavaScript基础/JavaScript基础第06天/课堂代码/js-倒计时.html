@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function contain(time) {
+            var now = new Date();
+            var newTime = now.getTime();
+            var fDate = new Date(time);
+            var fTime = fDate.getTime();
+            var chuo = (newTime - fTime) / 1000;
+            var t = parseInt(chuo / 60 / 60 / 24).toString().padStart(2, '0');
+            var s = parseInt(chuo / 60 / 60 % 24).toString().padStart(2, '0');
+            var f = parseInt(chuo / 60 % 60).toString().padStart(2, '0');
+            var m = parseInt(chuo % 60).toString().padStart(2, '0');
+            return `还剩下${t}天 ${s}小时 ${f}分钟 ${m}秒`
+        }
+        var str = contain('2020,10,1')
+        console.log(str);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸡兔同笼</title>
+</head>
+
+<body>
+    <script>
+        // 鸡兔同笼  每只鸡2条腿  每只兔4条腿
+        var head = 35; //头总数
+        var sum = 94; //腿的总数
+        // var chicken = 0;
+        // var rabbit = 0;
+        // var num = 0;
+        for (var i = 1; i <= head; i++) {
+            var j = head - i;
+            if (2 * j + 4 * i == sum) {
+                console.log(`兔子${i}只,小鸡${i}只`);
+            }
+
+        }
+        // console.log(chicken);
+    </script>
+</body>
+
+</html>

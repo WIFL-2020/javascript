@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var o = {
+        //     age: 15,
+        //     sex: '男'
+        // }
+        // if (o['uname']) {
+        //     console.log('里面有该属性');
+        // } else {
+        //     console.log('没有该属性');
+        // }
+
+        // var str = 'abcoefoxyozzopp';
+        // var o = {};
+        // for (var i = 0; i < str.length; i++) {
+        //     var chars = str.charAt(i);
+        //     if (o[chars]) {
+        //         o[chars]++;
+        //     } else {
+        //         o[chars] = 1;
+        //     }
+        // }
+        // console.log(o);
+        // //遍历对象
+        // var max = 0;
+        // var ch = '';
+        // for (var k in o) {
+        //     if (o[k] > max) {
+        //         max = o[k];
+        //         ch = k;
+        //     }
+        // }
+        // console.log(max);
+        // console.log('最多的字符是' + ch);
+
+        // //添加
+        // var str = 'andy';
+        // console.log(str.concat('red'));
+
+        // //截取
+        // var str1 = '改革春风吹满地'
+        // console.log(str1.substr(2, 3)); //从第几个索引开始，截取几个
+
+        // var str = '前端后面是越来越来难了，我不怂我特么一定要挺住';
+        // var key = '不怂';
+        // var index = str.indexOf(key);
+        // str = str.substr(index, 2);
+        // console.log(str);
+
+        // var strs = '这两天有点着急了,自己有点混乱';
+        // var pot = '着急';
+        // var indexs = strs.indexOf(pot);
+        // strs = strs.substr(indexs, 2);
+        // console.log(strs);
+
+
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 5 - i; j <= 1; j--) {
+                document.write('');
+            }
+
+            for (var x = 1; x <= 2 * i - 1; x++) {
+                document.write('★')
+            }
+            document.write('<br>')
+
+        }
+
+        // document.write("<pre>");
+        // for (var i = 1; i <= 5; i++) {
+        //     // 先打印字母a
+        //     for (var x = 5 - i; x >= 1; x--) {
+        //         document.write(" ");
+        //     }
+
+        //     // 打印星星
+        //     for (var j = 1; j <= 2 * i - 1; j++) {
+        //         document.write("★");
+        //     }
+
+        // document.write("<br>");
+        // }
+    </script>
+</body>
+
+</html>

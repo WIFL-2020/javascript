@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var computer = {
+            color: '黑色',
+            weight: '55kg',
+            brand: '奥迪',
+            model: 'tx-5s',
+            sayHi: function() {
+                alert('我在看电影/听音乐/打游戏/敲代码')
+            }
+        }
+        for (var k in computer) {
+            console.log(k);
+            console.log(computer[k]);
+        }
+
+        computer.sayHi();
+    </script>
+</body>
+
+</html>

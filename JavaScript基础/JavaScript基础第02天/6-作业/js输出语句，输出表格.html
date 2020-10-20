@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin: 50px auto;
+            width: 400px;
+            height: 100px;
+        }
+        
+        tr {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var uname = '张三疯'
+        var age = 18
+        var height = 186
+        var weight = '110kg'
+        var str = '<table border="1" cellspacing="0">'
+        str += '<tr>'
+        str += '<td>姓名</td>'
+        str += '<td>年龄</td>'
+        str += '<td>身高</td>'
+        str += '<td>体重</td>'
+        str += '</tr>'
+        str += '<tr>'
+        str += '<td>' + uname + '</td>'
+        str += '<td>' + age + '</td>'
+        str += '<td>' + height + '</td>'
+        str += '<td>' + weight + '</td>'
+        str += '</tr>'
+        document.write(str)
+    </script>
+</body>
+
+</html>

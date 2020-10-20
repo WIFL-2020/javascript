@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var sum = 1;
+        // while (sum <= 5) {
+        //     // console.log('冲哥大帅逼');
+        //     document.write('冲哥大帅逼')
+        //     sum++;
+        // }
+
+        // var message = prompt('你爱我吗？');
+        // while (message !== '我爱你') {
+        //     message = prompt('你爱我吗？')
+        // }
+        // alert('我也爱你')
+
+        // // 计算1到100之间的和
+        // var i=1;
+        // sum=0;
+        // while()
+
+        var uname = prompt('输入用户名');
+        var password = prompt('请输入密码');
+        var flag = true;
+        while (flag) {
+            if (uname === 'admin' && password === '123456') {
+                alert('登录成功');
+                flag = false;
+            } else {
+                uname = prompt('请输入用户名');
+                password = prompt('请输入密码')
+            }
+        }
+    </script>
+</body>
+
+</html>

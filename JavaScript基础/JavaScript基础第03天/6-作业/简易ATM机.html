@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var sum = 100;
+        do {
+            var balance = parseInt(prompt('请您输入服务编号' + '\n' + '1.存钱' + '\n' + '2.取钱' + '\n' + '3.显示余额' + '\n' + '4.退出服务'));
+            switch (balance) {
+                case 1:
+                    var rmb = parseInt(prompt('请输入您要存入得金额'));
+                    sum = sum + rmb;
+                    alert(`您还有金额${sum}`)
+                    break;
+                case 2:
+                    var rmb1 = parseInt(prompt('请输入您要取出得金额'));
+                    if (rmb1 > sum) {
+                        alert('余额不足')
+                    } else {
+                        sum = sum - rmb1;
+                        alert(`您还有金额${sum}`)
+                    }
+                    break;
+                case 3:
+                    alert(`您还有金额${sum}`)
+                    break;
+                case 4:
+                    alert('您已退出服务')
+                    break;
+                default:
+                    alert('您输入的有误')
+                    break;
+            }
+        }
+        while (balance != 4)
+    </script>
+</body>
+
+</html>

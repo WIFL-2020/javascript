@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>请客吃饭</title>
+</head>
+
+<body>
+    <script>
+        var sum = parseInt(prompt('班长口袋里有多少钱'));
+        if (sum >= 2000) {
+            alert('请大家吃西餐')
+        } else if (sum < 2000 && sum >= 1500) {
+            alert('请大家吃快餐')
+        } else if (sum < 1500 && sum >= 1000) {
+            alert('请大家喝饮料')
+        } else if (sum < 1000 && sum >= 500) {
+            alert('请大家吃棒棒糖')
+        } else {
+            alert('班长下次把钱带够哈')
+        }
+    </script>
+</body>
+
+</html>

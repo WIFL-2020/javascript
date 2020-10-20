@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var week = prompt('请您输入需要查询的日期:');
+        if (week % 7 == 1) {
+            alert(`${week}号是星期三`)
+        } else if (week % 7 == 2) {
+            alert(`${week}号是星期四`)
+        } else if (week % 7 == 3) {
+            alert(`${week}号是星期五`)
+        } else if (week % 7 == 4) {
+            alert(`${week}号是星期六`)
+        } else if (week % 7 == 5) {
+            alert(`${week}号是星期日`)
+        } else if (week % 7 == 6) {
+            alert(`${week}号是星期一`)
+        } else {
+            alert(`${week}号是星期二`)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>早上好啊</div>
+    <img src="ldh.jpg" alt="">
+    <script>
+        var div = document.querySelector('div')
+        var img = document.querySelector('img')
+        var date = new Date();
+        var h = date.getHours;
+        if (h < 12) {
+            div.innerHTML = '早上好啊'
+            img.src = 'ldh.jpg'
+
+        } else if (h < 18) {
+            div.innerHTML = '亲下午了哦，写代码了'
+        } else {
+            div.innerHTML = '晚上了都，早点休息吧，再熬夜就掉头发了'
+            img.src = 'zxy.jpg'
+        }
+    </script>
+</body>
+
+</html>

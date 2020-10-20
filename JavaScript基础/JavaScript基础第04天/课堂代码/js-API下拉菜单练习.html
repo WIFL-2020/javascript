@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .box {
+            width: 1000px;
+            height: 100px;
+            margin: 100px auto;
+        }
+        
+        .box ul li {
+            float: left;
+            margin: 0 30px;
+            width: 100px;
+        }
+        
+        .box ul li dl {
+            display: none;
+        }
+        
+        .box ul li:hover dl {
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                衣服
+                <dl>
+                    <dt>衣服</dt>
+                    <dd>帽子</dd>
+                    <dd>羽绒服</dd>
+                    <dd>毛衣</dd>
+                </dl>
+            </li>
+            <li>
+                上衣
+                <dl>
+                    <dt>上衣</dt>
+                    <dd>T恤</dd>
+                    <dd>风衣</dd>
+                    <dd>外套</dd>
+                </dl>
+            </li>
+            <li>
+                裤子
+                <dl>
+                    <dt>裤子</dt>
+                    <dd>短裤</dd>
+                    <dd>牛仔裤</dd>
+                    <dd>马裤</dd>
+                    <dd>紧身裤</dd>
+                    <dd>喇叭裤</dd>
+                </dl>
+            </li>
+            <li>
+                裙子
+                <dl>
+                    <dt>裙子</dt>
+                    <dt>超短裙</dt></dd>
+                    <dt>包臀裙</dt></dd>
+                    <dt>连衣裙</dt></dd>
+                    <dt>高腰裙</dt></dd>
+                </dl>
+            </li>
+            <li>
+                鞋
+                <dl>
+                    <dt>鞋</dt>
+                    <dd>板鞋</dd>
+                    <dd>布鞋</dd>
+                    <dd>高跟鞋</dd>
+                    <dd>长筒靴</dd>
+                    <dd>运动鞋</dd>
+                    <dd>套鞋</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <script>
+        //获取元素
+        var lis = document.querySelectorAll('li')
+        var dls = document.querySelectorAll('li dl')
+        for (var i = 0; i < lis.length; i++) {
+            // lis[i].j = i
+            lis[i].setAttribute('index', i)
+            lis[i].onmouseenter = function() {
+
+                var index = this.getAttribute('index')
+                dls[index].style.display = 'block'
+                    // dls[this.j].style.display = 'block'
+            }
+            lis[i].onmouseleave = function() {
+                var index = this.getAttribute('index')
+                dls[index].style.display = 'none'
+            }
+        }
+    </script>
+</body>
+
+</html>

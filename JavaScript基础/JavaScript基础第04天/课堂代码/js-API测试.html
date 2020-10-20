@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="修改文本框" id="btn">
+    <input type="text" value=""><br>
+    <input type="text" value=""><br>
+    <input type="text" value=""><br>
+    <input type="text" value=""><br>
+    <script>
+        // var btn = document.getElementById('btn')
+        // var input = document.querySelectorAll('input');
+        // btn.onclick = function() {
+        //     for (var i = 0; i < input.length; i++) {
+        //         if (input[i].type != 'button') {
+        //             input[i].value = '助教好帅哦'
+        //         }
+        //     }
+        // }
+    </script>
+    <img src="ldh.jpg" alt="">
+    <img src="zxy.jpg" alt="">
+    <img src="subnav-bg.png" alt="">
+    <script>
+        var imgs = document.querySelectorAll('img')
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function() {
+                alert('被点了')
+            }
+        }
+    </script>
+
+    <input type="button" value="按钮" id="btn2">
+    <script>
+        var btn = document.getElementById('btn2')
+        btn2.onclick = function() {
+            this.type = 'text'
+            this.value = '我真的太棒了'
+        }
+    </script>
+
+    <input type="button" value="没怀孕">
+    <input type="button" value="没怀孕">
+    <input type="button" value="没怀孕">
+    <input type="button" value="没怀孕">
+    <input type="button" value="没怀孕">
+    <script>
+        // var ins = document.getElementsByTagName('input')
+        // for (var i = 0; i < ins.length; i++) {
+        //     ins[i].onclick = function() {
+        //         for (var j = 0; j < ins.length; j++) {
+        //             ins[j].value = '没怀孕'
+        //         }
+        //         this.value = '怀孕了'
+        //     }
+        // }
+
+        var ins = document.getElementsByTagName('input')
+        for (var i = 0; i < ins.length; i++) {
+            ins[i].onclick = function() {
+                for (var j = 0; j < ins.length; j++) {
+                    ins[j].value = '没怀孕'
+                }
+                this.value = '怀孕了'
+            }
+        }
+    </script>
+
+    <input type="button" value="按钮" id='btn3'>
+    <img src="ldh.jpg" alt="">
+    <script>
+        var btn3 = document.getElementById('btn3')
+        var img = document.querySelector('img')
+        btn3.onclick = function() {
+            img.src = 'zxy.jpg'
+        }
+    </script>
+</body>
+
+</html>
