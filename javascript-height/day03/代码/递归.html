@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //递归函数：自己调用自己
+        //递里面必须加退出条件 
+        var num = 2;
+
+        function fn() {
+            console.log('我来了，世界');
+            if (num == 5) {
+                return; //递归必须加退出条件
+            }
+            num++;
+            fn()
+        }
+        fn();
+
+
+        //求 1*2*3...n 阶乘
+    </script>
+</body>
+
+</html>

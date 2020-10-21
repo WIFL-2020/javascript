@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //闭包  就是一个函数
+        //理解为 一个作用域访问另一个作用域中内部的局部变量的函数
+        //闭包的主要作用： 衍生了变量的作用的范围   
+        function fn() {
+            var num = 10;
+
+            function fun() {
+                console.log(num);
+            }
+            return fun;
+        }
+        var f = fn()
+    </script>
+</body>
+
+</html>
