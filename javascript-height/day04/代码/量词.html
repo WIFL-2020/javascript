@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量词</title>
+</head>
+
+<body>
+    <script>
+        //{3}就是重复三次
+        var reg = /^a{3}$/
+        console.log(reg.test(''));
+        console.log(reg.test('a'));
+        console.log(reg.test('aaaa'));
+        console.log(reg.test('aaa'));
+
+        //{3,} 大于等于3
+        var rec = /^a{3,}$/
+        console.log(rec.test(''));
+        console.log(rec.test('a'));
+
+        //{3，16} 大于等于3 并且小于 16
+        var regs = /^a{3,16}$/;
+        console.log(regs.test(''));
+        console.log(regs.test('a'));
+        console.log(regs.test('aaaa'));
+        console.log(regs.test('aa'));
+
+        //量词是设定某个模式出现的次数
+        //这个模式用户只能输入英文字母 数字 下划线 短横线  但是有边界符和[] 这就限定了只能多选1
+        var rage = /^[a-zA-Z0-9_-]{6,16}$/;
+        //{6,16} 中间不要有空格
+        console.log(rage.test('a'));
+        console.log(rage.test('8'));
+        console.log(rage.test('18'));
+        console.log(rage.test('aa'));
+        console.log('-------------------------');
+        console.log(rage.test('andy-red'));
+        console.log(rage.test('andy_red'));
+        console.log(rage.test('andy007'));
+        console.log(rage.test('andy!007'));
+    </script>
+</body>
+
+</html>

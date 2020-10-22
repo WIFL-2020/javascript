@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span {
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        .right {
+            color: green;
+        }
+        
+        .wrong {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" class="uname"> <span>请输入用户名</span>
+    <script>
+        //表单 
+        var stars = /^[a-zA-Z0-9_-]{6,16}$/
+            //获取元素
+        var input = document.querySelector('.uname');
+        var span = document.querySelector('span')
+            //注册事件
+        input.onblur = function() {
+            if (stars.test(this.value)) {
+                console.log('输入正确');
+                span.className = 'right'
+                span.innerHTML = '输入格式正确'
+            } else {
+                console.log('输入有误');
+                span.className = 'wrong'
+                span.innerHTML = '输入格式错误'
+            }
+        }
+    </script>
+</body>
+
+</html>

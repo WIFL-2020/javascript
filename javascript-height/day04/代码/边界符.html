@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var rg = /abc/
+        console.log(rg.test('abc'));
+
+        // ^表示以什么开头
+        var reg = /^abc/
+        console.log(reg.test('abc'));
+
+        // $表示以什么结尾
+        var reg1 = /^abc$/;
+        console.log(reg1.test('abcd'));
+
+        var rg2 = /[abc]/;
+        console.log(rg2.test('acs'));
+        console.log(rg2.test('color'));
+
+        var rg3 = /^[abc]$/ //三选一 只有是a 或者是b 或者是c 这三个字母才返回 true
+        console.log(rg3.test('aacd'));
+        //
+        console.log('------------------------------------');
+        var regs = /^[a-z]$/ //26个英文字母任何一个字母返回true - 表示的是a 到z的范围
+        console.log(regs.test('a'));
+        console.log(regs.test('z'));
+        console.log(regs.test('A'));
+        console.log(regs.test(1));
+
+        //字符组合
+        //表示26个英文字母(大写和小写都可以)任何一个字母返回 true - 表示的是a 到z 的范围
+        var rcg = /^[a-zA-Z0-9]$/
+        console.log(rcg.test('a'));
+        console.log(rcg.test('B'));
+        console.log(rcg.test(8));
+        console.log('----------------------');
+        //
+        //如果中括号里面有^表示取反的意思 千万和 我们边界 符 ^ 别混淆
+        var rags = /^[^a-zA-Z0-9_-]$/;
+        console.log(rags.test('a'));
+        console.log(rags.test('B'));
+        console.log(rags.test(8));
+        console.log(rags.test('-'));
+        console.log(rags.test('_'));
+        console.log(rags.test('!'));
+    </script>
+</body>
+
+</html>
