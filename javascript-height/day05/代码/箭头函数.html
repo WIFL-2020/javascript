@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //箭头函数 是用来简化函数定义
+        // const fn = () => {
+        //     console.log(123);
+        // }
+        // fn()
+
+        //定义函数
+        // const sum = (n1, n2) => n1 + n2;
+        // const result = sum(10, 20)
+        // console.log(result);
+
+        //在箭头函数中 如果形参只有一个 函数外侧的小括号也是可以省掉的
+        const fn = (v) => {
+            console.log(v);
+        }
+        fn(20)
+            //箭头函数不绑定this 函数
+
+
+        var name = 'window'
+        let o = {
+            name: '李四',
+            age: '60',
+            sayHai: function() {
+                console.log('大噶好,我来着宜昌，我叫' + this.name);
+                setTimeout(() => {
+                    console.log('大噶好,我来着宜昌，我叫' + this.name);
+                }, 1000)
+            }
+        }
+        let p = {
+            name: 'zs'
+        }
+        o.sayHai(p)
+    </script>
+</body>
+
+</html>

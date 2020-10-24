@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [{
+            id: 1,
+            name: '张山峰',
+            age: '55'
+        }, {
+            id: 2,
+            name: '洪七公',
+            age: '68'
+        }]
+        let finder = array.find((item, index) => item.id == 2);
+        console.log(finder);
+    </script>
+</body>
+
+</html>
