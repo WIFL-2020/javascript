@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 1. 导入模板引擎 -->
+    <!-- 在 window 全局，多一个函数，叫做 template('模板的Id', 需要渲染的数据对象) -->
+    <script src="../04.code/lib/template-web.js"></script>
+    <script src="../04.code/lib/jquery.js"></script>
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+    <!-- 3. 定义模板 -->
+    <!-- 3.1 模板的 HTML 结构，必须定义到 script 中 -->
+    <script type="text/html" id="tpl-user">
+        <ul>
+            <li>{{name}}</li>
+            <li>{{age}}</li>
+            <li>{{@cs}}</li>
+            {{if sex==='女'}}
+            <li>{{sex}}</li>
+            {{/if}}
+
+            <li>
+                爱好是：
+                <ol>
+                    {{each hobby}}
+                    <li>索引：{{$index}}{{$value}} {{/each}}</li>
+
+                    <!-- <li>当前时间为：${{data | formatDate}}</li> -->
+                </ol>
+        </ul>
+
+
+    </script>
+
+    <script>
+        let data = {
+            name: '张山峰',
+            age: '55',
+            cs: '<h1>我来了</h1>',
+            sex: '女',
+            hobby: ['睡觉', '吃饭', '打豆豆']
+                // data: 'new Data'
+        }
+
+
+
+        // 4. 调用 template 函数
+        var html = template('tpl-user', data)
+        console.log(html)
+            // 5. 渲染HTML结构
+        $('#container').html(html)
+    </script>
+</body>
+
+</html>
